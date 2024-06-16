@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .form-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 300px;
+  }
+  .input-field {
+    margin-bottom: 10px;
+  }
+  .input-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .save-button {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Task-4</h2>
+
+  <form action="/submit-form" method="post">
+    <div class="input-field">
+      <label class="input-label" for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="fullname">
+    </div>
+
+    <div class="input-field">
+      <label class="input-label" for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+
+    <div class="input-field">
+      <label class="input-label" for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </div>
+
+    <div class="input-field">
+        <label class="input-label" for="password">Re-Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+
+    <div class="input-field">
+      <label class="input-label" for="address">Address:</label>
+      <textarea id="address" name="address"></textarea>
+    </div>
+
+    <label for="age">Age:</label>
+    <input type="number" id=""age" name="age"><br><br>
+    <label for=”gender”>Gender:</label><br>
+    <select id="gender" name="gender">
+        <option value="">select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+   
+
+
+    <!-- Additional fields like Age and Gender would follow a similar pattern -->
+
+    <!-- Submit Button -->
+    <button type="submit" class="save-button">Save</button>
+  </form>
+</div>
+
+</body>
+</html>

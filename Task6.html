@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .login-container form {
+            text-align: left;
+        }
+
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button.cancel {
+            background-color: #f44336;
+            width: 48%;
+            margin-right: 4%;
+            display: inline-block;
+        }
+
+        .login-container button:hover {
+            opacity: 0.8;
+        }
+
+        .login-container .remember-me {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .login-container .remember-me input {
+            margin-right: 5px;
+        }
+
+        .login-container .footer-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .login-container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        .forgot-password {
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="https://via.placeholder.com/100" alt="User Icon">
+    <form>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Login</button>
+        
+        <div class="remember-me">
+            <input type="checkbox" name="remember"> Remember me
+        </div>
+
+        <div class="footer-buttons">
+            <button type="button" class="cancel">Cancel</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
